@@ -15,7 +15,11 @@ export default function Landing() {
             className="absolute inset-0 bg-gradient-to-r from-violet-600 to-blue-500 opacity-10"
             initial={{ scale: 1.2 }}
             animate={{ scale: 1 }}
-            transition={{ duration: 20, repeat: Infinity, repeatType: "reverse" }}
+            transition={{
+              duration: 20,
+              repeat: Infinity,
+              repeatType: "reverse",
+            }}
           />
         </div>
 
@@ -27,7 +31,7 @@ export default function Landing() {
             className="text-center"
           >
             <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-violet-600 to-blue-500">
-              Libérez votre créativité musicale avec l'intelligence artificielle
+              Libérez votre créativité musicale
             </h1>
             <p className="text-xl text-muted-foreground mb-8">
               Composez, créez et partagez votre musique comme jamais auparavant
@@ -42,7 +46,9 @@ export default function Landing() {
       {/* Features Section */}
       <section className="py-20 bg-muted/50">
         <div className="container mx-auto px-4">
-          <h2 className="text-4xl font-bold text-center mb-16">Une solution complète pour votre créativité</h2>
+          <h2 className="text-4xl font-bold text-center mb-16">
+            Une solution complète pour votre créativité
+          </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <FeatureCard
               icon={<Waves className="w-8 h-8" />}
@@ -66,7 +72,9 @@ export default function Landing() {
       {/* Pricing Section */}
       <section className="py-20">
         <div className="container mx-auto px-4">
-          <h2 className="text-4xl font-bold text-center mb-16">Choisissez votre formule</h2>
+          <h2 className="text-4xl font-bold text-center mb-16">
+            Choisissez votre formule
+          </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <PricingCard
               title="Gratuit"
@@ -75,7 +83,7 @@ export default function Landing() {
                 "Accès limité aux fonctionnalités",
                 "Parfait pour découvrir",
                 "Export MP3 basique",
-                "5 projets maximum"
+                "5 projets maximum",
               ]}
               buttonText="Commencer"
             />
@@ -86,7 +94,7 @@ export default function Landing() {
                 "Accès illimité",
                 "IA avancée",
                 "Audio haute qualité",
-                "Projets illimités"
+                "Projets illimités",
               ]}
               buttonText="Passer Premium"
               featured
@@ -98,7 +106,7 @@ export default function Landing() {
                 "Tout Premium +",
                 "Exports professionnels",
                 "Droits commerciaux",
-                "Support prioritaire"
+                "Support prioritaire",
               ]}
               buttonText="Devenir Pro"
             />
@@ -109,7 +117,9 @@ export default function Landing() {
       {/* Testimonials Section */}
       <section className="py-20 bg-muted/50">
         <div className="container mx-auto px-4">
-          <h2 className="text-4xl font-bold text-center mb-16">Ce qu'en disent nos utilisateurs</h2>
+          <h2 className="text-4xl font-bold text-center mb-16">
+            Ce qu'en disent nos utilisateurs
+          </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <TestimonialCard
               image="https://images.unsplash.com/photo-1518315064-bec5daa6062b"
@@ -136,7 +146,9 @@ export default function Landing() {
       {/* CTA Section */}
       <section className="py-20">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-4xl font-bold mb-8">Prêt à composer votre prochain hit ?</h2>
+          <h2 className="text-4xl font-bold mb-8">
+            Prêt à composer votre prochain hit ?
+          </h2>
           <Button size="lg" className="text-lg">
             Commencer gratuitement
           </Button>
